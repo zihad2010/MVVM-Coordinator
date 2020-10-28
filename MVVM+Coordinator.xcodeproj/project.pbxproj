@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		9605517C2548640700834B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605517B2548640700834B66 /* AppDelegate.swift */; };
 		9605517E2548640700834B66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605517D2548640700834B66 /* SceneDelegate.swift */; };
-		960551802548640700834B66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605517F2548640700834B66 /* ViewController.swift */; };
 		960551832548640700834B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960551812548640700834B66 /* Main.storyboard */; };
-		960551862548640700834B66 /* MVVM_Coordinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 960551842548640700834B66 /* MVVM_Coordinator.xcdatamodeld */; };
 		960551882548640900834B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960551872548640900834B66 /* Assets.xcassets */; };
 		9605518B2548640900834B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960551892548640900834B66 /* LaunchScreen.storyboard */; };
 		960551962548640900834B66 /* MVVM_CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960551952548640900834B66 /* MVVM_CoordinatorTests.swift */; };
 		960551A12548640900834B66 /* MVVM_CoordinatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960551A02548640900834B66 /* MVVM_CoordinatorUITests.swift */; };
+		960551AF2548645E00834B66 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960551AE2548645E00834B66 /* AppCoordinator.swift */; };
+		960551B125497A3700834B66 /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960551B025497A3700834B66 /* EventListCoordinator.swift */; };
+		960551B32549850100834B66 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960551B22549850100834B66 /* EventListViewController.swift */; };
+		960551B525498B8E00834B66 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960551B425498B8E00834B66 /* UIColor+Extensions.swift */; };
+		960551BB254996BE00834B66 /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 960551B9254996BE00834B66 /* EventsApp.xcdatamodeld */; };
+		960551BD2549981A00834B66 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960551BC2549981A00834B66 /* CoreDataManager.swift */; };
+		9666625D2549D18C005664B3 /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9666625C2549D18C005664B3 /* AddEventCoordinator.swift */; };
+		96793A522549CF4F00842D16 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96793A512549CF4F00842D16 /* EventListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +45,7 @@
 		960551782548640700834B66 /* MVVM+Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9605517B2548640700834B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9605517D2548640700834B66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9605517F2548640700834B66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		960551822548640700834B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		960551852548640700834B66 /* MVVM_Coordinator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM_Coordinator.xcdatamodel; sourceTree = "<group>"; };
 		960551872548640900834B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9605518A2548640900834B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9605518C2548640900834B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 		9605519C2548640900834B66 /* MVVM+CoordinatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM+CoordinatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960551A02548640900834B66 /* MVVM_CoordinatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_CoordinatorUITests.swift; sourceTree = "<group>"; };
 		960551A22548640900834B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960551AE2548645E00834B66 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		960551B025497A3700834B66 /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
+		960551B22549850100834B66 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		960551B425498B8E00834B66 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		960551BA254996BE00834B66 /* EventsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsApp.xcdatamodel; sourceTree = "<group>"; };
+		960551BC2549981A00834B66 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		9666625C2549D18C005664B3 /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
+		96793A512549CF4F00842D16 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +113,18 @@
 		9605517A2548640700834B66 /* MVVM+Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				96793A532549CF5400842D16 /* ViewModels */,
+				960551B8254995F900834B66 /* Coordinators */,
+				960551B7254995CE00834B66 /* Controllers */,
+				960551B6254995A800834B66 /* Extentions */,
 				9605517B2548640700834B66 /* AppDelegate.swift */,
 				9605517D2548640700834B66 /* SceneDelegate.swift */,
-				9605517F2548640700834B66 /* ViewController.swift */,
 				960551812548640700834B66 /* Main.storyboard */,
 				960551872548640900834B66 /* Assets.xcassets */,
 				960551892548640900834B66 /* LaunchScreen.storyboard */,
 				9605518C2548640900834B66 /* Info.plist */,
-				960551842548640700834B66 /* MVVM_Coordinator.xcdatamodeld */,
+				960551B9254996BE00834B66 /* EventsApp.xcdatamodeld */,
+				960551BC2549981A00834B66 /* CoreDataManager.swift */,
 			);
 			path = "MVVM+Coordinator";
 			sourceTree = "<group>";
@@ -129,6 +145,40 @@
 				960551A22548640900834B66 /* Info.plist */,
 			);
 			path = "MVVM+CoordinatorUITests";
+			sourceTree = "<group>";
+		};
+		960551B6254995A800834B66 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				960551B425498B8E00834B66 /* UIColor+Extensions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		960551B7254995CE00834B66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				960551B22549850100834B66 /* EventListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		960551B8254995F900834B66 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				960551AE2548645E00834B66 /* AppCoordinator.swift */,
+				960551B025497A3700834B66 /* EventListCoordinator.swift */,
+				9666625C2549D18C005664B3 /* AddEventCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		96793A532549CF5400842D16 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				96793A512549CF4F00842D16 /* EventListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				960551802548640700834B66 /* ViewController.swift in Sources */,
+				960551B32549850100834B66 /* EventListViewController.swift in Sources */,
 				9605517C2548640700834B66 /* AppDelegate.swift in Sources */,
-				960551862548640700834B66 /* MVVM_Coordinator.xcdatamodeld in Sources */,
+				960551B525498B8E00834B66 /* UIColor+Extensions.swift in Sources */,
+				960551AF2548645E00834B66 /* AppCoordinator.swift in Sources */,
 				9605517E2548640700834B66 /* SceneDelegate.swift in Sources */,
+				9666625D2549D18C005664B3 /* AddEventCoordinator.swift in Sources */,
+				960551B125497A3700834B66 /* EventListCoordinator.swift in Sources */,
+				96793A522549CF4F00842D16 /* EventListViewModel.swift in Sources */,
+				960551BD2549981A00834B66 /* CoreDataManager.swift in Sources */,
+				960551BB254996BE00834B66 /* EventsApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,13 +652,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		960551842548640700834B66 /* MVVM_Coordinator.xcdatamodeld */ = {
+		960551B9254996BE00834B66 /* EventsApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				960551852548640700834B66 /* MVVM_Coordinator.xcdatamodel */,
+				960551BA254996BE00834B66 /* EventsApp.xcdatamodel */,
 			);
-			currentVersion = 960551852548640700834B66 /* MVVM_Coordinator.xcdatamodel */;
-			path = MVVM_Coordinator.xcdatamodeld;
+			currentVersion = 960551BA254996BE00834B66 /* EventsApp.xcdatamodel */;
+			path = EventsApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
