@@ -14,11 +14,11 @@ class EventListViewController: UIViewController {
     
     var eventListViewModel: EventListViewModel!
     
-    static func instantiate() -> EventListViewController {
-        let storyBoard = UIStoryboard(name: "Main", bundle: .main)
-        let controller = storyBoard.instantiateViewController(identifier: "EventListViewController") as! EventListViewController
-        return controller
-    }
+//    static func instantiate() -> EventListViewController {
+//        let storyBoard = UIStoryboard(name: "Main", bundle: .main)
+//        let controller = storyBoard.instantiateViewController(identifier: "EventListViewController") as! EventListViewController
+//        return controller
+//    }
     // MARK: - view cycle method
     
     override func viewDidLoad() {
